@@ -1,0 +1,36 @@
+.product-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    text-align: center;
+    max-width: 200px; /* Set a max width for the card */
+    margin: 10px; /* Add margin for spacing */
+    flex: 1 1 auto; /* Allow flexibility in the card size */
+  }
+  
+  .product-card img {
+    width: 100%; /* Make the image take the full width of the card */
+    height: 150px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio, cropping as necessary */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .product-card {
+      max-width: 150px; /* Reduce max width on smaller screens */
+      height: auto; /* Allow height to adjust automatically */
+    }
+  
+    .product-card img {
+      height: 120px; /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-card {
+      max-width: 100%; /* Full width on very small screens */
+    }
+  
+    .product-card img {
+      height: 100px; /* Further reduce height for mobile */
+    }
+  }
